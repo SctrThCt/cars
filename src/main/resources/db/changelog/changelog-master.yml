@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - include:
+      file: db/sql/1_wheel_entity.sql
+
+  - include:
+      file: db/sql/2_engine_entity.sql
+
+  - include:
+      file: db/sql/3_driver_and_car_entities.sql
