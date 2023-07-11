@@ -1,0 +1,14 @@
+services:
+  cars-db:
+    image: postgres:15.3
+    environment:
+      POSTGRES_USER: stc
+      POSTGRES_PASSWORD: password
+      PGDATA: /data/postgres
+    volumes:
+      - cars-db:/data/postgres
+    ports:
+      - '5433:5432'
+
+volumes:
+  cars-db: {}
